@@ -20,7 +20,7 @@ import java.util.List;
  * @author [Gruppe 3]
  * @version 1.0
  * */
-
+ 
 public class EventSubject implements EventSubjectIF {
     private static EventSubject instance; //Singleton
     private List<EventObserverIF> observers;

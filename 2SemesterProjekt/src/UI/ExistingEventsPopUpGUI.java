@@ -37,7 +37,7 @@ public class ExistingEventsPopUpGUI extends JDialog {
 
 
 	/**
-	 * Create the dialog.
+	 * Create the dialog. 
 	 * @param eventsOnDate 
 	 */
 	public ExistingEventsPopUpGUI(EventCtr eventCtr, List<Event> eventsOnDate) {

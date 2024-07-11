@@ -47,7 +47,7 @@ public class AssignmentMainGUI extends JFrame {
 	private Event event;
 	private MainGUI mainGUI;
 
-
+ 
 	/**
 	 * Create the frame. Constructor
 	 */

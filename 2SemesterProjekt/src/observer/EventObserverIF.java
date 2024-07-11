@@ -14,3 +14,4 @@ package observer;
 public interface EventObserverIF {
 	void update();
 }
+ 

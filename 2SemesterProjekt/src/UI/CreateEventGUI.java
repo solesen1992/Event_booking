@@ -54,7 +54,7 @@ public class CreateEventGUI extends JFrame {
 
 
 	/**
-	 * Create the frame. Constructor
+	 * Create the frame. Constructor 
 	 */
 	public CreateEventGUI(EventCtr eventCtr) {
 		setLocationRelativeTo(null);

@@ -12,7 +12,7 @@ public class Band  {
 	private String bandGenre;
 	private String bandDescription;
 	private String bandName;
-	
+	 
 	/**
 	 * Constructor.
 	 * The constructor is being used to initialize the attributes when a new object is created.

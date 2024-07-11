@@ -46,7 +46,7 @@ public class CreateAssignmentPart1GUI extends JFrame {
 
 
 	/**
-	 * Create the frame.
+	 * Create the frame. 
 	 */
 	public CreateAssignmentPart1GUI(EventCtr eventCtr) {
 		setLocationRelativeTo(null);

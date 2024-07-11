@@ -46,7 +46,7 @@ public class AssignmentConfirmationGUI extends JFrame {
 	private EventCtr eventCtr;
 	private AssignmentMainGUI assignmentMainGUI;
 	private AssignmentCtr assignmentCtr;
-
+ 
 	/**
 	 * Creates the frame.
 	 * Constructor.

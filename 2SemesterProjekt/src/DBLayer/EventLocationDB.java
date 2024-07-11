@@ -31,7 +31,7 @@ public class EventLocationDB implements EventLocationDBIF {
 	 * database.
 	 * 
 	 * selectByNameQ filters the results based on the locationName.
-	 */
+	 */ 
 	private static final String selectAllQ = "SELECT EventLocation.*, CityZipCode.cityZipCodeId, CityZipCode.zipCode, CityZipCode.city "
 			+ "FROM EventLocation "
 			+ "LEFT JOIN CityZipCode ON EventLocation.fk_cityZipCodeId = CityZipCode.cityZipCodeId";

@@ -17,7 +17,7 @@ public class Volunteer {
 	private String memberType;
 	private String role;
 	private CityZipCode cityZipCode;
-	
+	 
 	/**
 	 * Constructor
 	 * */

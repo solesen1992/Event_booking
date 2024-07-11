@@ -65,7 +65,7 @@ public class CreateConcertGUI extends JFrame {
 	private JTextArea textAreaBeskrivelse;
 
 	/**
-	 * Create the frame. Constructor.
+	 * Create the frame. Constructor. 
 	 * 
 	 * @param eventLocationGUI
 	 * @throws SQLException

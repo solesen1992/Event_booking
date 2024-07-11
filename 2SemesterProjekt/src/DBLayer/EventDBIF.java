@@ -23,4 +23,4 @@ public interface EventDBIF {
 	List<Event> showAllEvents() throws  DataAccessException;
 	public int getMaxEventId() throws DataAccessException;
 }
-
+ 

@@ -30,7 +30,7 @@ public class AddAssignmentPopUpGUI extends JDialog {
 	// Panel to hold the content
 	private final JPanel contentPanel = new JPanel();
 	private EventCtr eventCtr;
-	
+	 
 
 	/**
 	 * Create the dialog.

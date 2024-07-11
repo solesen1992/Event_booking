@@ -24,7 +24,7 @@ public class BandDB implements BandDBIF {
 	private static final String findAllBandsQ = "SELECT * FROM Band";
 	private PreparedStatement findBandsByNames;
 	private PreparedStatement findAllBands;
-
+ 
 	/**
 	 * Constructor for BandDB class.
 	 * 

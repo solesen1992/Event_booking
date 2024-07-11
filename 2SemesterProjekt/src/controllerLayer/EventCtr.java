@@ -41,7 +41,7 @@ import model.Volunteer;
  * @author [Gruppe 3]
  * @version 1.0
  */
-
+ 
 public class EventCtr  {
 	private EventDBIF eventDB;
 	private BandDBIF bandDB;

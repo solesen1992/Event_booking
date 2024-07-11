@@ -13,3 +13,4 @@ public interface EventSubjectIF {
 	void removeObserver(EventObserverIF observer);
 	void notifyObservers();
 }
+ 

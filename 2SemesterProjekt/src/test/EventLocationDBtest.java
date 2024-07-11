@@ -33,7 +33,7 @@ import model.EventLocation;
  * */
 
 class EventLocationDBtest {
-
+ 
 	/**
 	 * `testFindEventLocation()` is testing the ability to find EventLocation objects in the database based 
 	 * on a passed identifier. It retrieves a list of EventLocations from the database, prints out their 

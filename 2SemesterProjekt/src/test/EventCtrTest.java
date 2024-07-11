@@ -40,7 +40,7 @@ class EventCtrTest {
 		eventCtr = new EventCtr(event);
 		eventDB = new EventDB();
 		bandDB = new BandDB();
-	}
+	} 
 
 	/**
 	 * 1 in the interaction diagram

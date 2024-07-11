@@ -21,4 +21,4 @@ public class VolunteerCtr {
 		Volunteer firstVolunteer = new Volunteer(1, "Bruce", "Lee", "12345678","jens.jensen@email.dk","Møllegade 3","Medlem","role", cityZipcodeCoded);
 		return firstVolunteer;
 	}	
-}
+} 

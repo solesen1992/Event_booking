@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
  * @author [Gruppe 3]
  * @version 1.0
  * */
-
+ 
 public class CommunityKitchen extends Event {
 	private String menu;
 	private int mealPrice;

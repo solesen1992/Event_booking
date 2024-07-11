@@ -17,7 +17,7 @@ import model.EventLocation;
  * @author [Gruppe 3]
  * @version 1.0
  */
-
+ 
 public interface EventLocationDBIF {
 	public List<EventLocation> findEventLocation(int estimatedAttendees) throws DataAccessException;
 	public EventLocation findEventLocationByName(String locationName) throws  DataAccessException;

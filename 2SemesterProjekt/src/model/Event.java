@@ -13,7 +13,7 @@ import java.util.List;
  * 
  * @author [Gruppe 3]
  * @version 1.0
- */
+ */ 
 public abstract class Event {
 	private int estimatedAttendees; 
 	private int locationId;

@@ -11,7 +11,7 @@ package model;
  * @author [Gruppe 3]
  * @version 1.0
  */
-
+ 
 public class CityZipCode {
 	private int cityZipCodeId;
 	private int zipCode;

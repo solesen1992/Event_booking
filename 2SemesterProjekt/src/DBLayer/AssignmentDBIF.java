@@ -19,3 +19,4 @@ public interface AssignmentDBIF {
 	void insertAllAssignments(Event event) throws DataAccessException, SQLException;
 	public List<Assignment> findAllAssignments() throws DataAccessException;
 }
+ 

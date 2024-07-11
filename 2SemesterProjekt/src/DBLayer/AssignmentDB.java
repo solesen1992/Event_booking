@@ -32,7 +32,7 @@ import model.Event;
  * @author [Gruppe 3]
  * @version 1.0
  */
-
+ 
 public class AssignmentDB implements AssignmentDBIF {
 	/**
 	 * SQL queries and prepared statements

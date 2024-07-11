@@ -26,7 +26,7 @@ public class EventLocationCtr {
 	public EventLocationCtr() throws DataAccessException {
 		eventLocationDB = new EventLocationDB();
 	}
-
+ 
 	/**
 	 * Use case 1 - Create event
 	 * 4.1 in the interaction diagram.

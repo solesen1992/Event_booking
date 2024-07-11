@@ -31,7 +31,7 @@ import model.Event;
 public class AssignmentCtr {
 	private AssignmentDBIF assignmentDB;
 	private List<Assignment> confirmedAssignments;
-	
+	 
 	/**
 	 * Constructor
 	 * */

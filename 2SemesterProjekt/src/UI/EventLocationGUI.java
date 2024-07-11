@@ -46,7 +46,7 @@ public class EventLocationGUI extends JFrame {
 
 
 	/**
-	 * Create the frame.
+	 * Create the frame. 
 	 * Constructor.
 	 * @param eventCtr 
 	 */

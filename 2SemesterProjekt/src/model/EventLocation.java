@@ -15,7 +15,7 @@ public class EventLocation {
 	private String phoneNo;
 	private int capacity;
 	private CityZipCode cityZipCode;
-
+ 
 	/**
 	 * Constructor.
 	 * The constructor is being used to initialize the locationId, locationName, street, email, 

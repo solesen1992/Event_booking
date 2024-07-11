@@ -31,7 +31,7 @@ import model.Event;
  * @author [Gruppe 3]
  * @version 1.0
  */
-
+ 
 public class EventDB implements EventDBIF {
 	/**
 	 * `selectAllQ` is a query that selects all records from the "event" table.

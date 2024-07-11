@@ -16,7 +16,7 @@ public class Assignment {
     private LocalDateTime assignmentStartTime;
     private LocalDateTime assignmentEndTime;
     private int eventId;
-
+ 
     /**
 	 * Constructor.
 	 * The constructor is being used to initialize the attributes when a new object is created.

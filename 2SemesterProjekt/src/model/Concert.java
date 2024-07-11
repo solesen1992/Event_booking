@@ -14,7 +14,7 @@ import java.util.ArrayList;
  * @version 1.0
  */
 public class Concert extends Event {
-
+ 
 	private double price;
 	private ArrayList<Band> bands;
 

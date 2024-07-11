@@ -25,7 +25,7 @@ import model.EventLocation;
  */
 
 class EventLocationTest {
-
+ 
 	/**
 	 * The `testEventLocation()` method tests the constructor of the `EventLocation` class by 
 	 * creating an instance of `EventLocation` with valid parameters. It then checks if the created 

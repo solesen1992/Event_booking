@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
  * @author [Gruppe 3]
  * @version 1.0
  * */
-
+ 
 public class Bar extends Event {
 	private double drinkDiscount;
 	

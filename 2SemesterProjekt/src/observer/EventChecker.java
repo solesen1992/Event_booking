@@ -17,7 +17,7 @@ public class EventChecker implements Runnable {
     private EventDB eventDB;
     private int maxId;
     private int sleepDuration;
-
+ 
     /**
      * Constructor
      * */

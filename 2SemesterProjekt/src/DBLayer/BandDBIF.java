@@ -16,7 +16,7 @@ import model.Band;
  * @version 1.0
  */
 public interface BandDBIF {
-	
+	 
 	/**
      * Retrieves bands from the database that match the provided band name or all bands.
      * 

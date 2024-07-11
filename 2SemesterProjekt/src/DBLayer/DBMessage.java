@@ -21,7 +21,7 @@ package DBLayer;
  * @author Gruppe 3 , knol
  * @version 2018-08-30
  */
-
+ 
 public class DBMessage {
 	//Used when there is an error reading from the result set.
 	public static final String COULD_NOT_READ_RESULTSET = "Could not read resultset";

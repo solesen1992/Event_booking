@@ -28,7 +28,7 @@ import java.sql.Statement;
  * @author knol
  * @version 1.0
  */
-
+ 
 public class DBConnection {
 	private Connection connection = null;
 	//static type that helps connecting with the database.

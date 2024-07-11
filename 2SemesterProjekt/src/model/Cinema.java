@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
  * @author [Gruppe 3]
  * @version 1.0
  * */
-
+ 
 public class Cinema extends Event {
 	private String movie;
 	private String movieGenre;

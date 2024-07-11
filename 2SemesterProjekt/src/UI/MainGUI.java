@@ -48,7 +48,7 @@ import observer.EventObserverIF;
  * close the application when the frame is closed. It also catches and handles
  * exceptions appropriately.
  * 
- * @author [Gruppe 3]
+ * @author [Gruppe 3] 
  * @version 1.0
  */
 public class MainGUI extends JFrame implements EventObserverIF {

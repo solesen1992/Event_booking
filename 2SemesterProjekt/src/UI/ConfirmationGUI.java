@@ -47,7 +47,7 @@ public class ConfirmationGUI extends JFrame {
 	private EventCtr eventCtr;
 	private Event event;
 	private MainGUI mainGUI;
-
+ 
 	/**
 	 * Create the frame.
 	 * Constructor for ConfirmationGUI.

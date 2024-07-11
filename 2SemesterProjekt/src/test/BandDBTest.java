@@ -41,7 +41,7 @@ import model.Band;
  * @author [Gruppe 3]
  * @version 1.0
  * */
-
+ 
 
 class BandDBTest {
 	
