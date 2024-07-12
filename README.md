@@ -1,5 +1,6 @@
-# Event_booking
-Event booking desktop application for 1000fryd. The project uses observer pattern, threads, java and MS SQL.
+# Event booking desktop application
+Event booking desktop application for 1000fryd. The project uses observer pattern, threads and a database.
+Languages used: Java and MS SQL.
 
 It was a group project made i the spring of 2024.
 
