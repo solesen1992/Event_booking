@@ -1,5 +1,7 @@
 # Event booking desktop application
-Event booking desktop application for 1000fryd. The project uses observer pattern, threads and a database.
+Event booking desktop application for 1000fryd. This documentation describes the purpose and functionality of a desktop application designed for creating and managing events. The application allows users to create various types of events, manage shift schedules, and (in the future) sign up volunteers for specific shifts.
+
+The project uses observer pattern, threads and a database.
 Languages used: Java and MS SQL. It also uses a three-layer architecture (UI, controller and model layer) and DAO-pattern.
 
 It was a group project made in the spring of 2024.
@@ -8,16 +10,36 @@ It was a group project made in the spring of 2024.
 <img width="800" alt="Event_create" src="https://github.com/solesen1992/Event_booking/assets/123094773/e029dd27-a719-49bd-b431-b776c29c1239">
 
 # Documentation
+## Functionality
+### Event Creation
+Users can create events of the following types:
+- Concert
+- Bar
+- Cinema
+- Community Kitchen
+- For each event, the user can specify details such as event name, date, time, location, and description. If the event is of the type 'Concert', the user needs to add bands too.
+
+### Event Overview
+The application provides an overview of all created events. Here, users can see a list of upcoming and past events, including details such as date, time, and type of event.
+
+### Adding Shifts
+Once an event is created, the user can add shifts to the event. This involves:
+- Defining shift times
+- Specifying tasks for each shift
+
+### Database Solution
+The application uses a database to store information about events, shifts, and volunteers. This ensures that all data is organized and easily accessible.
+
 ## Observer pattern and threads
 In non-functional requirements, we have the requirement that the system response time must be short, so the volunteers get quick access to the latest information on the overview of events. Updating the event list must happen quickly - whether it is the person themselves or another person who has created the event, as it can otherwise lead to double bookings.
 
-<img width="800" alt="Event_list" src="https://github.com/solesen1992/Event_booking/assets/123094773/3c827e6c-4ee1-4623-b47a-efbbc49381cb">
+<img width="800" alt="Event_list" src="https://github.com/user-attachments/assets/abac7fe0-8d1f-4d45-aec3-7815190b451f">
 
 On the GUI, we have a list of upcoming events that needs to update continuously as volunteers create events. To develop this function, we worked with parallelism, where the window updates itself when a new event is added to the database. The parallelism occurs because the window updates alongside the user working in the GUI to create events. It reloads the event list, even though we are doing something else.
 
 To develop the function, we use the Observer pattern, which is a design pattern. The Observer pattern creates a one-to-many dependency between objects. This means that when one object changes state (in this case, our eventId), all subscribed objects (in this case, our table of events) are notified and updated, so our volunteers quickly get newly created events on the event overview.
 
-<img width="800" alt="observer_pattern" src="https://github.com/solesen1992/Event_booking/assets/123094773/d5a47d8c-15ad-4c47-9036-a393b10c22dd">
+<img width="924" alt="ObserverPattern_designclassdiagramme" src="https://github.com/user-attachments/assets/cad8bd84-1830-4acc-844f-88a32a653b44">
 
 In the design class diagram, you can see the following classes:
 - EventSubjectIF defines the methods necessary to manage observers.
@@ -37,6 +59,8 @@ When we run the program on two different machines, the update on one machine can
 ## Database and ACID-principles
 The ACID principles are used in the DBConnection class to ensure reliability and robustness in database operations.
 
+<img width="800" alt="ACID_in_code" src="https://github.com/user-attachments/assets/6ce5cbfe-6b5e-4155-93ad-e29df441e829">
+
 ### Atomicity
 Atomicity means that a transaction must be fully completed or rolled back in the event of an error. Methods such as startTransaction(), commitTransaction(), and rollbackTransaction() ensure that operations are fully executed or not at all. If errors occur, no changes are made, ensuring consistency in the database.
 
@@ -53,7 +77,11 @@ Durability ensures that once something is saved in a database (in our case throu
 The company's risk analysis highlights potential security issues that could compromise user safety information. Using prepared statements in the DAO pattern can protect against SQL injections, where users send malicious SQL queries to the database, potentially compromising the system by altering or deleting data.
 
 ## MS SQL
+<img width="500" alt="SQL-createTable" src="https://github.com/user-attachments/assets/e5e688c9-d7f8-421d-9754-2941333c937b">
+
 Our tables each have a primary key in the form of an ID, where we have used IDENTITY(1,1), which ensures that we get an autogenerated ID, so we do not have to create them manually. The first number represents the first autogenerated ID, which in this case is 1, and the second number represents how much the IDs increase by each time, so the numbers change continuously.
+
+<img width="500" alt="SQL-insertValues" src="https://github.com/user-attachments/assets/d6fac8c0-d052-4bdb-af27-997445b27ee2">
 
 Since the IDs are autogenerated, they do not need to be inserted manually when we insert values into the table. Foreign keys, however, must be filled in. The foreign key refers to a primary key in another table, and the database needs to know which primary key the foreign key refers to and which IDs should be combined if the tables are to be joined.
 
