@@ -1,6 +1,6 @@
 # Event booking desktop application
 Event booking desktop application for 1000fryd. The project uses observer pattern, threads and a database.
-Languages used: Java and MS SQL.
+Languages used: Java and MS SQL. It also uses a three-layer architecture (UI, controller and model layer) and DAO-pattern.
 
 It was a group project made in the spring of 2024.
 
