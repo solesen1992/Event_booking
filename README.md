@@ -56,6 +56,36 @@ To achieve parallelism, we have implemented the Runnable interface on EventCheck
 
 When we run the program on two different machines, the update on one machine can be seen on the other.
 
+## Relational database
+We used the relational model to design the database structure. This is based on the domain model, where each class gets its own relation name and table. The attributes are turned into columns (called attributes), and a primary key is added. We used primary keys and foreign keys to create connections and relationships between data in different tables. A foreign key refers to a primary key in another table by matching the value in the primary key, creating a connection between the tables.
+
+The associations between classes in the domain model determine where the foreign keys should be placed. For example, Volunteer and Event have a 0..* and 1 relationship, where the 1 is placed at Volunteer and 0..* at Event. This means that Event should have a foreign key referring to Volunteer’s primary key.
+
+<img width="923" alt="relationel_model" src="https://github.com/user-attachments/assets/8cfd608d-084b-487d-a77d-83074e124717">
+
+Model: Relational Model
+
+### City and Zipcode
+Initially, we had 'city' and 'zipcode' under ‘Volunteer’, but this would create problems in the long term as 'zipcode' and 'city' affect each other. If one changes, the other must also change to prevent errors in our data. Therefore, we followed the third normalization rule: If an attribute depends on keys other than our primary key, a new table should be created. Due to this rule, we created the table 'CityZipCode', which contains information for 'city' and 'zipcode'. We then added a foreign key to 'Volunteer' and 'EventLocation'.
+
+### Volunteer and Member
+‘Volunteer’ is the superclass of ‘Member’, where ‘Member’ covers the paying members of the association (which can consist of both volunteers, the board, and chairmen) - but one can also be a volunteer without being a member.
+
+We needed to decide how to handle inheritance between ‘Volunteer’ and ‘Member’. To solve this problem, we looked at transformation, where we can create a table for each, pull down, or pull up. We chose to perform a pull up, where all attributes from the subclasses are moved up to our superclass, creating one large table. We then added memberType, allowing us to see the type of member and which attributes should or should not be null. The downside is that there will be a few fields that will not be filled in for all volunteers, but we assess that there will likely not be many different member types in the future, so there will not be too many unfilled attributes in the table.
+
+### Events
+Considerations about transformation also arose when we looked at ‘Events’, as we have several different types of events as subclasses. This led to the addition of 'eventType', allowing us to distinguish between the different subclasses. We decided not to perform a pull down because 'Event' already has many attributes.
+
+For Events, we created a table for each, as a pull up would result in many fields in one table, making the table unwieldy with many empty fields. Therefore, we decided that a table for each was better if 1000fryd wishes to add more event types.
+
+### Some examples of relations and how it's shown in the SQL code:
+
+#### One to many relation
+<img width="800" alt="one_to_many relation" src="https://github.com/user-attachments/assets/a4d18370-f335-4721-8bac-37cadd2842e1">
+
+#### Many to many relation
+<img width="800" alt="many_to_many_relation" src="https://github.com/user-attachments/assets/69b942a8-0897-4d71-a6fe-7f0b18c269e5">
+
 ## Database and ACID-principles
 The ACID principles are used in the DBConnection class to ensure reliability and robustness in database operations.
 
