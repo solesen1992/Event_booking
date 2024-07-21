@@ -2,7 +2,7 @@
 Event booking desktop application for 1000fryd. This documentation describes the purpose and functionality of a desktop application designed for creating and managing events. The application allows users to create various types of events, manage shift schedules, and (in the future) sign up volunteers for specific shifts.
 
 The project uses observer pattern, threads and a database.
-Languages used: Java and MS SQL. It also uses a three-layer architecture (UI, controller and model layer) and DAO-pattern.
+Languages used: Java and MS SQL. It also uses a three-layer architecture (UI, controller and model layer), DAO-pattern and a graphic user interface (GUI).
 
 It was a group project made in the spring of 2024.
 
